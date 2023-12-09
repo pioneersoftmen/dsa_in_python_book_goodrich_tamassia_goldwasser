@@ -13,5 +13,3 @@ def find(path, filename):
             for entry in os.listdir(path):
                 # Recursively call find on the subdirectory or file
                 find(os.path.join(path, entry), filename)
-
-find('C:', 'windows')  
